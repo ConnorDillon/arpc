@@ -1,8 +1,7 @@
-package nio
+package arpc.nio
 
-import serialization.Deserializer
-import Deserializer.{Incomplete, Invalid}
-import serialization.Deserializer
+import arpc.serialization.Deserializer
+import arpc.serialization.Deserializer.{Incomplete, Invalid}
 
 trait DatagramReader[T] extends ChannelReader[T] {
   this: Deserializer[T] =>

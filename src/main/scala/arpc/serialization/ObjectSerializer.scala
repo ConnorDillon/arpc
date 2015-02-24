@@ -1,8 +1,8 @@
-package serialization
+package arpc.serialization
 
 import java.io.ObjectOutputStream
 import java.nio.ByteBuffer
-import nio.ByteBufferOutputStream
+import arpc.nio.ByteBufferOutputStream
 
 trait ObjectSerializer[T] extends Serializer[T] {
   def serialize(obj: T, buffer: ByteBuffer): Unit = {

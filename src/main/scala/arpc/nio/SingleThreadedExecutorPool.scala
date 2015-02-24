@@ -1,4 +1,4 @@
-package nio
+package arpc.nio
 
 class SingleThreadedExecutorPool(size: Int) {
   protected val pool = Array.fill[SingleThreadedExecutor](size)(new SingleThreadedExecutor)

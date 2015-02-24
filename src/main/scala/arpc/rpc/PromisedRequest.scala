@@ -1,4 +1,4 @@
-package rpc
+package arpc.rpc
 
 import scala.concurrent.Promise
 import scala.util.Try

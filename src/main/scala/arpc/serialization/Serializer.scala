@@ -1,4 +1,4 @@
-package serialization
+package arpc.serialization
 
 import java.nio.ByteBuffer
 

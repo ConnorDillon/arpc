@@ -1,4 +1,4 @@
-package nio
+package arpc.nio
 
 import java.net.InetSocketAddress
 import java.nio.channels.{SelectionKey, ServerSocketChannel}

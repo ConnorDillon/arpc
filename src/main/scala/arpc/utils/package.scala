@@ -1,3 +1,5 @@
+package arpc
+
 import scala.concurrent.ExecutionContext
 
 package object utils {

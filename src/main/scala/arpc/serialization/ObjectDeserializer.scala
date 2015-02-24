@@ -1,9 +1,9 @@
-package serialization
+package arpc.serialization
 
 import java.io.{EOFException, ObjectInputStream}
 import java.nio.ByteBuffer
-import nio.ByteBufferInputStream
-import Deserializer.{Failure, Incomplete, Invalid}
+import arpc.nio.ByteBufferInputStream
+import arpc.serialization.Deserializer.{Failure, Incomplete, Invalid}
 
 trait ObjectDeserializer[T] extends Deserializer[T] {
   def deserialize(buffer: ByteBuffer): Either[Failure, T] = {

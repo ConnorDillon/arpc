@@ -1,4 +1,4 @@
-package rpc
+package arpc.rpc
 
 import scala.concurrent.{Future, Promise}
 

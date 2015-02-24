@@ -1,10 +1,10 @@
-package nio
+package arpc.nio
 
 import java.io.IOException
 import java.nio.ByteBuffer
 import java.nio.channels.{CancelledKeyException, ClosedChannelException, SelectionKey, NotYetConnectedException}
-import serialization.Deserializer
-import utils.execute
+import arpc.serialization.Deserializer
+import arpc.utils.execute
 
 trait ChannelReader[T] extends ChannelOps {
   this: Deserializer[T] =>

@@ -1,10 +1,10 @@
-package nio
+package arpc.nio
 
 import java.io.IOException
 import java.nio.ByteBuffer
 import java.nio.channels.{SelectionKey, ClosedChannelException, CancelledKeyException, NotYetConnectedException}
-import serialization.Serializer
-import utils.execute
+import arpc.serialization.Serializer
+import arpc.utils.execute
 
 trait ChannelWriter[T] extends ChannelOps {
   this: Serializer[T] =>

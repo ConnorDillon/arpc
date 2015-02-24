@@ -1,4 +1,4 @@
-package rpc
+package arpc.rpc
 
 import scala.language.implicitConversions
 import scala.concurrent.{ExecutionContext, Future}

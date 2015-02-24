@@ -1,9 +1,9 @@
-package serialization
+package arpc.serialization
 
 import java.nio.ByteBuffer
 
 trait Deserializer[T] {
-  import serialization.Deserializer._
+  import Deserializer._
 
   def deserialize(buffer: ByteBuffer): Either[Failure, T]
 }

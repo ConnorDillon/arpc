@@ -1,9 +1,8 @@
-package nio
+package arpc.nio
 
 import scala.collection.mutable
-import serialization.Deserializer
-import Deserializer.{Incomplete, Invalid}
-import serialization.Deserializer
+import arpc.serialization.Deserializer
+import arpc.serialization.Deserializer.{Incomplete, Invalid}
 
 trait StreamReader[T] extends ChannelReader[T] {
   this: Deserializer[T] =>

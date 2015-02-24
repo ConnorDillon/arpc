@@ -1,8 +1,8 @@
-package serialization
+package arpc.serialization
 
 import java.nio.ByteBuffer
 import java.util
-import Deserializer.Failure
+import arpc.serialization.Deserializer.Failure
 
 trait UTF8Deserializer extends Deserializer[String] {
   def deserialize(buffer: ByteBuffer): Either[Failure, String] = {

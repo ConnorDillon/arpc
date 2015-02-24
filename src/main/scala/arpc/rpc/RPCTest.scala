@@ -1,12 +1,12 @@
-package rpc
+package arpc.rpc
 
 import java.nio.channels.SelectionKey
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.{ExecutionContext, Future}
 import scala.util.{Failure, Success}
-import nio.{SingleThreadedExecutor, Server, Client}
-import serialization.{ObjectSerializer, ObjectDeserializer}
-import utils.execute
+import arpc.nio.{SingleThreadedExecutor, Server, Client}
+import arpc.serialization.{ObjectSerializer, ObjectDeserializer}
+import arpc.utils.execute
 
 object RPCTest {
   def apply(): Unit = {

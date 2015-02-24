@@ -1,11 +1,11 @@
-package rpc
+package arpc.rpc
 
 import java.nio.ByteBuffer
 import java.nio.channels.SelectionKey
 import scala.concurrent.Future
 import scala.collection.mutable
-import nio.{SingleThreadedExecutor, TCPChannelHandler}
-import serialization.{Deserializer, Serializer}
+import arpc.nio.{SingleThreadedExecutor, TCPChannelHandler}
+import arpc.serialization.{Deserializer, Serializer}
 
 class Dispatcher(val name: String, stubs: List[Stub], impls: List[Impl],
                  val selectionKey: SelectionKey, val thread: SingleThreadedExecutor)
